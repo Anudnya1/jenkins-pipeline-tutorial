@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Static Analysis') {
             steps {
-                echo 'Run the static analysis to the code' 
+                echo 'Run the static analysis to the code in this  stage.' 
             }
         }
         stage('Compile') {
             steps {
-                echo 'Compile the source code' 
+                echo 'Compile the source code. -Anudnya Patil' 
             }
         }
         stage('Security Check') {
@@ -23,12 +23,12 @@ pipeline {
         }
         stage('Run Integration Tests') {
             steps {
-                echo 'Run only crucial integration tests from the source code' 
+                echo 'Run only crucial integration tests from the source code in this step.' 
             }
         }
         stage('Publish Artifacts') {
             steps {
-                echo 'Save the assemblies generated from the compilation' 
+                echo 'Save the assemblies generated from the compilation in Publish Artifacts Stage.' 
             }
         }
     }
